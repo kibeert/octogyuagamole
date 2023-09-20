@@ -65,3 +65,10 @@ for x in MyList:
     print(x)
 print(MyList)
 print(len(MyList))
+print(MyList[2])
+MyList[1] = "mango"
+print(MyList)
+for i in range(len(MyList)):
+    print(i)
+MyList.sort()
+print(MyList)
