@@ -72,3 +72,61 @@ for i in range(len(MyList)):
     print(i)
 MyList.sort()
 print(MyList)
+thisDict={
+    "firstname": "collins",
+    "lastname": "koech",
+    "age" : 20,
+
+}
+print(thisDict)
+print(thisDict["firstname"])
+print(len(thisDict))
+print(thisDict.get(age))
+for x in thisDict:
+    print(x)
+
+family = {
+    "father":{
+        "name":"Shadrack",
+        "gender": "male",
+        "age": 56,
+    },
+    "mother":{
+        "name":"Rose",
+        "gender":"female",
+        "age": 50
+    },
+    "child1":{
+        "name":"manu",
+        "gender":"male",
+        "age":25
+    }
+}
+print(family)
+for i in family:
+    print(i)
+
+print(family["child1"]["name"])
+
+grade = int(input("What was your score"))
+if grade<=100 and grade>90:
+    print("A good work")
+elif grade<=89  and grade>70:
+    print("B")
+elif grade<=79 and grade>60:
+    print("c")
+elif grade<=59 and grade>50:
+    print("D")
+elif grade<=49 and grade>40:
+    print("D")
+else:
+    print("F fail")
+
+
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in fruits:
+    for y in adj:
+        print(x,y)
+        
