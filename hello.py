@@ -141,25 +141,27 @@ def tri_recursion(k):
 print("\n\nRecursion Example results")
 tri_recursion(9)
 
+myTuple = ("Apple", "Banana", "Cherry")
+myit = iter(myTuple)
 
-class Person():
-    def __init__(self, fname, lname):
-        self.firstname = fname
-        self.lastname = lname
+for x in myTuple:
+    print(x)
 
-    def printname(self):
-        print(self.firstname, self.lastname)
+class myNumbers():
+    def __iter__(self):
+        self.a = 1
+        return self
+    def __next__(self):
+        x= self.a
+        self.a +=1
+        return x
+    
+myclass = myNumbers()
+myIter = iter(myclass)
 
-x = Person("Collins", "kibet")
-x.printname()
-
-class Student(Person):
-    def __init__(self, fname, lname, year):
-        super.__init__(fname,lname)
-        self.graduationyear= year
-
-y= Student("Darius", "kipruto", 2025)
-y.printname()
-
-
+print(next(myIter))
+print(next(myIter))
+print(next(myIter))
+print(next(myIter))
+print(next(myIter))
         
