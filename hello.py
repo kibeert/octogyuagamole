@@ -128,5 +128,5 @@ fruits = ["apple", "banana", "cherry"]
 
 for x in fruits:
     for y in adj:
-        print(x,y)
+        print(y,x)
         
