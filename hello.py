@@ -11,3 +11,18 @@ print(a)
 print(b)
 print(type(a))
 print(type(b))
+
+#global variables
+a = "Awesome"
+
+def myFunc():
+    print("python is " + a)
+myFunc()
+#local variables
+
+def Myfunc():
+    global z
+    z = "Awesome"
+    print("Python is " + z)
+Myfunc()
+print("python is " + z)
