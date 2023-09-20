@@ -32,3 +32,10 @@ w  ="Banana"
 for x in w:
     print(x)
 print(len(w))
+
+txt = "The Best Things In Life Are Free"
+word = "free"
+if word in txt:
+    print("Yes the word" + word+ " Is present")
+else:
+    print("The given word,"+word+"  is not present")
