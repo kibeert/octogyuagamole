@@ -141,32 +141,25 @@ def tri_recursion(k):
 print("\n\nRecursion Example results")
 tri_recursion(9)
 
+
 class Person():
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-        pass
-    def __str__(self, name, age) -> str:
-        return f"{self.name}{self.age}"
-        pass
-p1 = Person("kibbet", 20)
-print(p1.name)
-print(p1.age)
-print(p1)
+    def __init__(self, fname, lname):
+        self.firstname = fname
+        self.lastname = lname
 
-class me():
-    def __init__(self, name, age) -> None:
-        self.name = name
-        self.age = age
-        pass
-    def __str__(self, name, age) -> str:
-        return f"{self.name}{self.age}"
-        pass
-    def greetings(self):
-        print("Hello my name is"+ self.name + " and i am "+ self.age + " years old")
+    def printname(self):
+        print(self.firstname, self.lastname)
 
-p1 = me("kibet", 20)
-p1.greetings()
+x = Person("Collins", "kibet")
+x.printname()
+
+class Student(Person):
+    def __init__(self, fname, lname, year):
+        super.__init__(fname,lname)
+        self.graduationyear= year
+
+y= Student("Darius", "kipruto", 2025)
+y.printname()
 
 
         
