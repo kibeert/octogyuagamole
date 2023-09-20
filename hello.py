@@ -26,3 +26,9 @@ def Myfunc():
     print("Python is " + z)
 Myfunc()
 print("python is " + z)
+
+
+w  ="Banana"
+for x in w:
+    print(x)
+print(len(w))
