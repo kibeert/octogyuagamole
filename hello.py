@@ -36,6 +36,32 @@ print(len(w))
 txt = "The Best Things In Life Are Free"
 word = "free"
 if word in txt:
-    print("Yes the word" + word+ " Is present")
+    print("Yes the word" + word+ " Is present 👍👍👍")
 else:
-    print("The given word,"+word+"  is not present")
+    print("The given word,"+word+"  is not present 😒😒😒")
+
+c= "Hello world"
+print(c[2:5])
+print(c.upper())
+print(c.capitalize())
+print(c.casefold())
+print(c.encode())
+print(c.strip())
+
+age = int(input("What is your age"))
+if age >= 18:
+    print("You are allowed to proceed")
+else:
+    print("you are still an underage")
+
+a= "to create "
+b= "Worldwide"
+c= "strong business"
+myOrder = "I want {} a {} recognized {}"
+print(myOrder.format(a, b, c))
+
+MyList = ["Apple", "Avacado", "Cherry"]
+for x in MyList:
+    print(x)
+print(MyList)
+print(len(MyList))
