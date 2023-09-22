@@ -71,3 +71,37 @@ import numpy as np
 arr = np.array([True, False, True])
 
 print(np.sort(arr))
+import numpy as np
+
+arr = np.array([[3, 2, 4], [5, 0, 1]])
+
+print(np.sort(arr))
+
+arr = np.array([41, 42, 43, 44])
+filter_array = []
+
+for element in arr:
+    if(element > 42):
+        filter_array.append(True)
+    else:
+        filter_array.append(False)
+
+newarr = arr[filter_array]
+print(filter_array)
+print(newarr)
+from numpy import random
+x = random.randint(100)
+
+y = int(input("whaht is your random number:"))
+if(y == x):
+    print('you are right')
+else:
+    print('wrong answer')
+print(x)
+print(random.randint(100, size=24))
+print(random.rand(3,5))
+
+x = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(3, 5))
+print(x)
+
+arr = np.array([1,2,3,4,5])
