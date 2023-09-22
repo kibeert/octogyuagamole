@@ -58,6 +58,16 @@ arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16
 newarr = np.hsplit(arr, 3)
 
 print(newarr)
-ar = np.array([1,2,3,4,5,6])
+ar = np.array([3,2,1,40,51,6])
 x = np.where(ar%2 == 1)
 print("The index of the element is ", x )
+x = np.sort(ar)
+print(x)
+arr = np.array(['banana', 'cherry', 'apple'])
+
+print(np.sort(arr))
+import numpy as np
+
+arr = np.array([True, False, True])
+
+print(np.sort(arr))
