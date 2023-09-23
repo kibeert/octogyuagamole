@@ -3,5 +3,5 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv("data.csv")
 
-df.plot(x= "Duration", y= "Calories")
+df.plot(kind="hist", x= "Duration", y= "Calories")
 plt.show()
