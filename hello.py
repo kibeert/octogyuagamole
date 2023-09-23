@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-xpoints= np.array([1,2,3,4,5])
-ypoints= np.array([10,20,30,40,50])
+xpoints= np.array([1,2,6,8,15])
+ypoints= np.array([3, 8, 1, 10, 25])
 plt.plot(xpoints, ypoints)
 plt.show()
