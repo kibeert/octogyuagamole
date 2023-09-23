@@ -1,3 +1,7 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+
 df = pd.read_csv("data.csv")
-print(df.duplicated())
+
+df.plot(x= "Duration", y= "Calories")
+plt.show()
