@@ -1,23 +1,7 @@
-import scipy
-from scipy import constants
-print(dir(constants))
+import matplotlib.pyplot as plt
+import numpy as np
 
-print(constants.yotta)    #1e+24
-print(constants.zetta)    #1e+21
-print(constants.exa)      #1e+18
-print(constants.peta)     #1000000000000000.0
-print(constants.tera)     #1000000000000.0
-print(constants.giga)     #1000000000.0
-print(constants.mega)     #1000000.0
-print(constants.kilo)     #1000.0
-print(constants.hecto)    #100.0
-print(constants.deka)     #10.0
-print(constants.deci)     #0.1
-print(constants.centi)    #0.01
-print(constants.milli)    #0.001
-print(constants.micro)    #1e-06
-print(constants.nano)     #1e-09
-print(constants.pico)     #1e-12
-print(constants.femto)    #1e-15
-print(constants.atto)     #1e-18
-print(constants.zepto)  
+xpoints= np.array([1,2,3,4,5])
+ypoints= np.array([10,20,30,40,50])
+plt.plot(xpoints, ypoints)
+plt.show()
