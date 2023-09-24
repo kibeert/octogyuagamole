@@ -1,8 +1,7 @@
-import matplotlib.pyplot as plt
-import numpy as np
+import mysql.connector
 
-y = np.array([0, 50, 100, 150,200])
-mylabels = ["Apples", "Bananas", "Cherries", "Dates", "Oranges"]
-myexplode = [0.2, 0, 0, 0,0]
-plt.pie(y,labels= mylabels,  explode=myexplode)
-plt.show()
+mydb = mysql.connector.connect(
+    host="kibet",
+    password = "39876700"
+)
+print(mydb)
